@@ -3,7 +3,7 @@ import App from "./App.vue";
 import router from "./router";
 
 import PrimeVue from "primevue/config";
-import IcyBluePreset from "./theme/customPreset";
+import CustomPreset from "./theme/customPreset";
 import "./style.css";
 
 const app = createApp(App);
@@ -11,7 +11,7 @@ const app = createApp(App);
 app.use(router);
 app.use(PrimeVue, {
   theme: {
-    preset: IcyBluePreset,
+    preset: CustomPreset,
     options: {
       cssLayer: {
         name: "primevue",
