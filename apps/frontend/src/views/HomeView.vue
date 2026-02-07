@@ -1,8 +1,6 @@
 <script setup lang="ts">
-import EntityComponent from "@/components/EntityComponent.vue";
+import EntityOverview from "@/components/EntityOverview.vue";
 import Button from "primevue/button";
-
-const imageUrls = ["https://picsum.photos/200/300", "https://picsum.photos/400/300"];
 </script>
 
 <template>
@@ -12,14 +10,7 @@ const imageUrls = ["https://picsum.photos/200/300", "https://picsum.photos/400/3
     <Button>Button</Button>
     <Button severity="info">Button</Button>
   </div>
-  <div class="flex flex-row gap-4">
-    <EntityComponent
-      :preview-image-url="imageUrls[i - 1]!"
-      type="image"
-      v-for="i in 2"
-      :key="i"
-    ></EntityComponent>
-  </div>
+  <EntityOverview></EntityOverview>
 </template>
 
 <style scoped></style>

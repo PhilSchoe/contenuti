@@ -4,5 +4,5 @@ export const entityIconMap: Record<EntityType, string> = {
   image: "pi-image",
   "image-series": "pi-images",
   video: "pi-video",
-  "3d-model": "pi-cube",
+  "3d-model": "pi-table",
 };
