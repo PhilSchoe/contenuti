@@ -8,7 +8,7 @@ import AuthLayout from "../layouts/AuthLayout.vue";
 
 <template>
   <AuthLayout>
-    <div class="flex flex-col items-center pb-6">
+    <div class="flex flex-col items-center">
       <h1 class="text-2xl font-bold text-surface-600 dark:text-surface-400 pb-1">Create Account</h1>
 
       <span class="text-white/70"
@@ -22,27 +22,29 @@ import AuthLayout from "../layouts/AuthLayout.vue";
       </span>
     </div>
 
-    <IconField class="w-full">
-      <InputIcon class="pi pi-user text-white/70" />
-      <InputText class="w-full" placeholder="Full Name" />
-    </IconField>
+    <div class="flex flex-col items-center gap-4">
+      <IconField class="w-full">
+        <InputIcon class="pi pi-user text-white/70" />
+        <InputText class="w-full" placeholder="Full Name" />
+      </IconField>
 
-    <IconField class="w-full">
-      <InputIcon class="pi pi-envelope text-white/70" />
-      <InputText class="w-full" placeholder="Email Address" />
-    </IconField>
+      <IconField class="w-full">
+        <InputIcon class="pi pi-envelope text-white/70" />
+        <InputText class="w-full" placeholder="Email Address" />
+      </IconField>
 
-    <IconField class="w-full">
-      <InputIcon class="pi pi-lock text-white/70" />
-      <InputText class="w-full" placeholder="Password" type="password" />
-    </IconField>
+      <IconField class="w-full">
+        <InputIcon class="pi pi-lock text-white/70" />
+        <InputText class="w-full" placeholder="Password" type="password" />
+      </IconField>
 
-    <IconField class="w-full">
-      <InputIcon class="pi pi-lock text-white/70" />
-      <InputText class="w-full" placeholder="Confirm Password" type="password" />
-    </IconField>
+      <IconField class="w-full">
+        <InputIcon class="pi pi-lock text-white/70" />
+        <InputText class="w-full" placeholder="Confirm Password" type="password" />
+      </IconField>
 
-    <Button label="Sign Up" />
+      <Button class="w-full" label="Sign Up" />
+    </div>
   </AuthLayout>
 </template>
 

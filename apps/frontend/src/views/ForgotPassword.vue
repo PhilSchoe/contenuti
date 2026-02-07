@@ -8,20 +8,21 @@ import AuthLayout from "../layouts/AuthLayout.vue";
 
 <template>
   <AuthLayout>
-    <div class="flex justify-center">
-      <h1 class="text-2xl font-bold text-surface-600 dark:text-surface-400 pb-6">Reset Password</h1>
+    <div class="flex flex-col items-center">
+      <h1 class="text-2xl font-bold text-surface-600 dark:text-surface-400 pb-1">Reset Password</h1>
+      <p class="text-white/70 text-center pb-6">
+        Enter your email address and we'll send you a link to reset your password.
+      </p>
     </div>
 
-    <p class="text-white/70 text-center pb-6">
-      Enter your email address and we'll send you a link to reset your password.
-    </p>
+    <div class="flex flex-col gap-4">
+      <IconField class="w-full">
+        <InputIcon class="pi pi-envelope text-white/70" />
+        <InputText class="w-full" placeholder="Email Address" />
+      </IconField>
 
-    <IconField class="w-full">
-      <InputIcon class="pi pi-envelope text-white/70" />
-      <InputText class="w-full" placeholder="Email Address" />
-    </IconField>
-
-    <Button label="Send Reset Link" />
+      <Button label="Send Reset Link" />
+    </div>
 
     <div class="flex justify-center pt-8">
       <router-link to="/signin" class="text-white/70 cursor-pointer hover:text-white/90 underline">
